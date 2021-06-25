@@ -1,0 +1,114 @@
+
+body
+{
+    margin: auto;
+}
+.below-space {
+    margin-bottom: 10px;
+}
+.left {
+    width:50%;
+    height: 100vh;
+    float:left;
+    background-size: cover;
+    background-color: blueviolet;
+
+   
+}
+.loader {
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-reflect: below 0px
+}
+
+.loader::after {
+    content: " ";
+    width: 1px;
+    height: 30px;
+    background-color: black;
+    border: 1px solid black;
+    animation: anime .4s steps(10) 0s infinite;
+}
+
+@keyframes anime {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+}
+
+.loader h2 {
+    font-size: medium;
+    position: relative;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    animation: load 1s steps(10) 0s infinite;
+    animation-direction: alternate;
+    overflow: hidden;
+    margin-bottom: 0px;
+    color: black;
+    text-shadow: 1px 1px 1px rgb(128, 99, 99),
+        3px 3px 6px rgb(156, 85, 226);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+@keyframes load {
+    0% {
+        width: 0px;
+
+    }
+
+    100% {
+        width: 168px;
+    }
+
+}
+form{
+  
+    width:50%;
+   min-height: 50vh;
+    background-image: url(./logo.jpg);
+    float:right;
+    text-align: center;
+    padding: 200px 0px 200px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+
+}
+input{
+    border-top: 0px solid white;
+    border-left: 0px solid cadetblue;
+    border-radius: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.footer{
+    clear: both;
+    background-color: aqua;
+    font-size: larger;
+    font-family:'Courier New', Courier, monospace;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    position: relative;
+    bottom:0px;
+    
+
+
+}
